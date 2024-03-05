@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    const hdcStartPrice = '100'
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CooLife™</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /*font-family: 'Anuphan', Anuphan, Anuphan, Anuphan, sans-serif;*/
+            font-family: "Work Sans", sans-serif;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333; background-image: url('resource/bg.JPG'); /* Add the path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: repeat-y;
+        }
+        .logo-container {
+            margin-bottom: 10px;
+        }
+
+        .logo-img {
+            max-width: 450px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        header {
+            background-color: #7396a4;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 50px;
+            text-blink: green;
+        }
+
+        .header-links a:hover {
+            transform: scale(1.05);
+        }
+
+        h1, h2 {
+            color: #333;
+            font-family: "Work Sans", sans-serif;
+        }
+        @media only screen and (max-width: 600px) {
+            .logo-container img {
+                max-width: 200px; /* Adjust the logo size for medium screens */
+            }
+
+            .header-links {
+                flex-direction: column; /* Stack links vertically on smaller screens */
+                align-items: center;
+            }
+
+            .header-links a {
+                margin: 5px 0; /* Adjust the margin for better spacing on smaller screens */
+                font-size: medium;
+            }
+        }
+
+        main {
+            padding: 20px;
+        }
+
+
+        .logo {
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto; /* Add this line to center the logo horizontally */
+            display: block;
+            margin-bottom: 50px;
+        }
+
+        .brand-detail {
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            margin-bottom: 50px;
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        .spec-table th, .spec-table td {
+            border: 2px solid #ddd;
+            padding: 5px;
+            text-align: left;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        footer {
+            background-color: #7396a4;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img class="logo-img" src="resource/logo.png">
+    </div>
+    <div class="header-links">
+        <br>
+        <a href="home.html">Home</a>
+        <a href="#footer">Contact</a>
+        <a href="cool-life.html">Product</a>
+    </div>
+</header>
+
+<main>
+    <div class="brand-detail">
+        <h1> CooLife™ </h1>
+        <img class="logo" src="resource/coollife.png" alt="CooLife Logo">
+        <h2> HDC Series </h2>
+        <h3> HDC-70 </h3>
+
+        <img class="brand-img" src="resource/cooLife/hdc/hdc-70.png" alt="CooLife HDC 70">
+        <table class="spec-table">
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Visible Light Transmission</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>Visible Light Reflection</td>
+                <td>5.6%</td>
+            </tr>
+            <tr>
+                <td>UV Block</td>
+                <td>99%</td>
+            </tr>
+            <tr>
+                <td>IR Rejected(1400nm)</td>
+                <td>95%</td>
+            </tr>
+            <tr>
+                <td>IR Rejected(950nm)</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>Solar Energy Rejected</td>
+                <td>65%</td>
+            </tr>
+            <tr>
+                <td>Thickness</td>
+                <td>2 MIL</td>
+            </tr>
+            <tr>
+                <td>Start Price</td>
+                <td>100 THB/ft²</td>
+            </tr>
+        </table>
+
+        <h3>HDC-50</h3>
+        <img class="brand-img" src="resource/cooLife/hdc/hdc-50.png" alt="CooLife HDC 50">
+
+        <table class="spec-table">
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Visible Light Transmission</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Visible Light Reflection</td>
+                <td>5.7%</td>
+            </tr>
+            <tr>
+                <td>UV Block</td>
+                <td>99%</td>
+            </tr>
+            <tr>
+                <td>IR Rejected</td>
+                <td>98%</td>
+            </tr>
+            <tr>
+                <td>Solar Energy Rejected</td>
+                <td>68%</td>
+            </tr>
+            <tr>
+                <td>Thickness</td>
+                <td>2 MIL</td>
+            </tr>
+            <tr>
+                <td>Start Price</td>
+                <td>100 THB/ft²</td>
+            </tr>
+        </table>
+
+        <h3>HDC-35</h3>
+        <img class="brand-img" src="resource/cooLife/hdc/hdc-35.png" alt="CooLife HDC 35">
+
+        <table class="spec-table">
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Visible Light Transmission</td>
+                <td>35%</td>
+            </tr>
+            <tr>
+                <td>Visible Light Reflection</td>
+                <td>5.8%</td>
+            </tr>
+            <tr>
+                <td>UV Block</td>
+                <td>99%</td>
+            </tr>
+            <tr>
+                <td>IR Rejected</td>
+                <td>97%</td>
+            </tr>
+            <tr>
+                <td>Solar Energy Rejected</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>Thickness</td>
+                <td>2 MIL</td>
+            </tr>
+            <tr>
+                <td>Start Price</td>
+                <td>100 THB/ft²</td>
+            </tr>
+        </table>
+
+        <h3>HDC-20</h3>
+        <img class="brand-img" src="resource/cooLife/hdc/hdc-20.png" alt="CooLife HDC 20">
+
+        <table class="spec-table">
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Visible Light Transmission</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Visible Light Reflection</td>
+                <td>5.7%</td>
+            </tr>
+            <tr>
+                <td>UV Block</td>
+                <td>99%</td>
+            </tr>
+            <tr>
+                <td>IR Rejected</td>
+                <td>95%</td>
+            </tr>
+            <tr>
+                <td>Solar Energy Rejected</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Thickness</td>
+                <td>2 MIL</td>
+            </tr>
+            <tr>
+                <td>Start Price</td>
+                <td>100 THB/ft²</td>
+            </tr>
+        </table>
+
+        <h3>HDC-05</h3>
+        <img class="brand-img" src="resource/cooLife/hdc/hdc-05.png" alt="CooLife HDC 05">
+
+        <table class="spec-table">
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Visible Light Transmission</td>
+                <td>5%</td>
+            </tr>
+            <tr>
+                <td>Visible Light Reflection</td>
+                <td>5.8%</td>
+            </tr>
+            <tr>
+                <td>UV Block</td>
+                <td>99%</td>
+            </tr>
+            <tr>
+                <td>IR Rejected</td>
+                <td>95.5%</td>
+            </tr>
+            <tr>
+                <td>Solar Energy Rejected</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Thickness</td>
+                <td>2 MIL</td>
+            </tr>
+            <tr>
+                <td>Start Price</td>
+                <td>100 THB/ft²</td>
+            </tr>
+        </table>
+    </div>
+
+</main>
+
+<footer id= "footer" >
+    <br>
+    &copy; 2024 Bangkok Window Film <br> <br>
+    tel: 061-4397379 | e-mail: pp@gmail.com | line: ppakzv
+
+</footer>
+
+</body>
+</html>

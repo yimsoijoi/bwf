@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic Film Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: "Work Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333; background-image: url('resource/bg.JPG'); /* Add the path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: repeat-y;
+        }
+
+
+        .logo-container {
+            margin-bottom: 10px;
+        }
+
+        .logo-img {
+            max-width: 450px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 50px;
+            text-blink: green;
+            font-family: "Work Sans", sans-serif;
+        }
+        .header-links a:hover {
+            transform: scale(1.05);
+        }
+
+
+        header {
+            background-color: #7396a4;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 50px;
+            text-blink: green;
+        }
+
+        .header-links a:hover {
+            transform: scale(1.05);
+        }
+
+        h1, h2 {
+            color: #333;
+            font-family: "Work Sans", sans-serif;
+        }
+        @media only screen and (max-width: 600px) {
+            .logo-container img {
+                max-width: 200px; /* Adjust the logo size for medium screens */
+            }
+
+            .header-links {
+                flex-direction: column; /* Stack links vertically on smaller screens */
+                align-items: center;
+            }
+
+            .header-links a {
+                margin: 5px 0; /* Adjust the margin for better spacing on smaller screens */
+                font-size: medium;
+            }
+        }
+        main {
+            padding: 20px;
+        }
+
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the products */
+            margin-top: 20px;
+        }
+
+        .product {
+            font-family: "Work Sans", sans-serif;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+            color: #f0f0f0;
+        }
+
+        /* Brand Colors */
+        .brand-cool-life {
+            background-color: #fff;
+            color: #fff;
+        }
+
+        /* Individual Brand Colors */
+        .hdc-brand {
+            /*background-color: rgba(0, 31, 63, 0.8); !* Transparent Deep Blue Logo *!*/
+            background-color: #fff;
+            color: #333;
+        }
+
+        .pro-brand {
+            /*background-color: rgba(255, 255, 153, 0.8); !* Transparent Gold Logo *!*/
+            background-color: #fff;
+            color: #333;
+        }
+
+        .kc-brand {
+            /*background-color: rgba(170, 0, 0, 0.7); !* Transparent Dark Red Logo *!*/
+            background-color: #fff;
+            color: #333;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto; /* Add this line to center the logo horizontally */
+            display: block;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        footer {
+            background-color: #7396a4;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img class="logo-img" src="resource/logo.png">
+    </div>
+    <div class="header-links">
+        <br>
+        <a href="home.html">home</a>
+        <a href="#footer">contact</a>
+        <a href="cool-life.html">product</a>
+    </div>
+</header>
+
+<main>
+    <img class="logo" src="resource/coollife.png" alt="CooLife Logo">
+    <!-- Product Page -->
+    <div class="product-container">
+
+        <div class="product brand-cool-life hdc-brand" onclick="redirectToBrandDetail('cool-life-hdc')">
+            <h3>HDC + Sputtered Series</h3>
+            <img src="resource/cooLife/hdc/hdc-70.png" alt="Cool-life HDC + Sputtered Series">
+        </div>
+
+        <div class="product brand-cool-life pro-brand" onclick="redirectToBrandDetail('cool-life-pro')">
+            <h3>PRO Series</h3>
+            <img src="resource/cooLife/pro/pro-70.png" alt="Cool-life PRO Series">
+        </div>
+
+        <div class="product brand-cool-life kc-brand" onclick="redirectToBrandDetail('cool-life-kc')">
+            <h3>KC Series</h3>
+            <img src="resource/cooLife/kc/kc-70.png" alt="Cool-life KC Series">
+        </div>
+    </div>
+
+    <!-- Contact Us Page -->
+    <div class="contact" onclick="redirectToBrandDetail('compare')">
+        <h2>Compare</h2>
+        <p>For inquiries, please call us at: <strong>061-4397379</strong></p>
+        <p>Or email us at: <strong>pp@gmail.com</strong></p>
+    </div>
+
+</main>
+<footer id= "footer" >
+    <br>
+    &copy; 2024 Bangkok Window Film <br> <br>
+    tel: 061-4397379 | e-mail: pp@gmail.com | line: ppakzv
+
+</footer>
+
+<script>
+    function redirectToBrandDetail(brand) {
+        // Use the brand parameter to dynamically construct the URL
+        var url = brand + '.html';
+
+        // Redirect to the specified URL
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>
